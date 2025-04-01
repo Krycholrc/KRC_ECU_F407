@@ -24,8 +24,8 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::D7, // TACHO
 	Gpio::B9, // IDLE1
 	Gpio::B8, // IDLE2
-	Gpio::A8, // BOOST
 	Gpio::B7, // FAN
+	Gpio::A8, // BOOST
 	Gpio::D5, // CEL
 	Gpio::D6, // SPARE
 	Gpio::E10, // A/C_RLY
@@ -50,8 +50,8 @@ Gpio GENERATED_OUTPUTS = {
 // "TACHO",
 // "IDLE1",
 // "IDLE2",
-// "BOOST",
 // "FAN",
+// "BOOST",
 // "CEL",
 // "SPARE",
 // "A/C_RLY",
