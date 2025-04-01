@@ -1,2 +1,1 @@
-! this file is used to define custom board-specific calibrations
-! see also extra.txt for board-specific data points
+custom_firmware.yaml
