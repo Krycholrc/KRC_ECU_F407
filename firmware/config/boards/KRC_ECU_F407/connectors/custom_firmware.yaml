@@ -79,18 +79,18 @@ pins:
     class: outputs
     ts_name: IDLE2
 
-  - id: B7
-    class: outputs
-    ts_name: FAN
-
   - id: A8
     class: outputs
     ts_name: BOOST
 
+  - id: B7
+    class: outputs
+    ts_name: FAN
+
   - id: D5
     class: outputs
     ts_name: CEL
-    
+
   - id: D6
     class: outputs
     ts_name: SPARE
@@ -113,7 +113,7 @@ pins:
 
   - id: EFI_ADC_2
     class: analog_inputs
-    ts_name: OIL_P
+    ts_name: MAF
 
   - id: EFI_ADC_3
     class: analog_inputs
@@ -129,23 +129,31 @@ pins:
 
   - id: EFI_ADC_6
     class: analog_inputs
-    ts_name: FUEL_P
+    ts_name: TPS
 
-  - id: EFI_ADC_12
+  - id: EFI_ADC_8
     class: analog_inputs
     ts_name: TPS1
 
-  - id: EFI_ADC_13
+  - id: EFI_ADC_9
     class: analog_inputs
     ts_name: TPS2
 
+  - id: EFI_ADC_12
+    class: analog_inputs
+    ts_name: ANALOG_A9
+
+  - id: EFI_ADC_13
+    class: analog_inputs
+    ts_name: ANALOG_A10
+
   - id: EFI_ADC_14
     class: analog_inputs
-    ts_name: PPS1
+    ts_name: ANALOG_A11
 
   - id: EFI_ADC_15
     class: analog_inputs
-    ts_name: PPS2
+    ts_name: ANALOG_A12
 
   - id: [D0, D0]
     class: [switch_inputs, event_inputs]
