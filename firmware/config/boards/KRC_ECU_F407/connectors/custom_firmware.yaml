@@ -79,10 +79,6 @@ pins:
     class: outputs
     ts_name: IDLE2
 
-  - id: A8
-    class: outputs
-    ts_name: BOOST
-
   - id: B7
     class: outputs
     ts_name: FAN
@@ -93,7 +89,15 @@ pins:
 
   - id: D6
     class: outputs
+    ts_name: SPARE <V2.4
+
+  - id: A7
+    class: outputs
     ts_name: SPARE
+
+  - id: A8
+    class: outputs
+    ts_name: BOOST
 
   - id: E10
     class: outputs
