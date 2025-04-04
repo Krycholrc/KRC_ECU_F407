@@ -54,8 +54,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",6="BARO",5="BATT",1="CLT",7="FUEL_P",2="IAT",4="MAP",3="OIL_P",15="PPS1",16="PPS2",13="TPS1",14="TPS2"
-#define adc_channel_e_fullenum "NONE","CLT","IAT","OIL_P","MAP","BATT","BARO","FUEL_P","INVALID","INVALID","INVALID","INVALID","INVALID","TPS1","TPS2","PPS1","PPS2"
+#define adc_channel_e_enum 0="NONE",14="ANALOG_A10",15="ANALOG_A11",16="ANALOG_A12",13="ANALOG_A9",6="BARO",5="BATT",1="CLT",2="IAT",3="MAF",4="MAP",7="TPS",9="TPS1",10="TPS2"
+#define adc_channel_e_fullenum "NONE","CLT","IAT","MAF","MAP","BATT","BARO","TPS","INVALID","TPS1","TPS2","INVALID","INVALID","ANALOG_A9","ANALOG_A10","ANALOG_A11","ANALOG_A12"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -1390,7 +1390,7 @@
 #define show_tcu_gauges false
 #define show_test_presets true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 4177061663
+#define SIGNATURE_HASH 2941937215
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1890,7 +1890,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI master.2025.04.04.KRC_ECU_F407.4177061663"
+#define TS_SIGNATURE "rusEFI master.2025.04.04.KRC_ECU_F407.2941937215"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
