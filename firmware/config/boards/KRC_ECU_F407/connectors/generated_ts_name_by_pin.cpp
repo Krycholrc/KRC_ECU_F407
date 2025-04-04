@@ -7,6 +7,7 @@
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
 		case Gpio::A10: return "UART_RX";
+		case Gpio::A7: return "SPARE";
 		case Gpio::A8: return "BOOST";
 		case Gpio::A9: return "UART_TX";
 		case Gpio::B12: return "EGT_CS";
@@ -27,7 +28,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::D3: return "CRANK";
 		case Gpio::D4: return "CAM";
 		case Gpio::D5: return "CEL";
-		case Gpio::D6: return "SPARE";
+		case Gpio::D6: return "SPARE <V2.4";
 		case Gpio::D7: return "TACHO";
 		case Gpio::D8: return "OUT_1A";
 		case Gpio::D9: return "OUT_2A";
