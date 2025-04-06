@@ -939,27 +939,6 @@ void startTunerStudioConnectivity() {
 	addConsoleAction("reset_ts", resetTs);
 	addConsoleActionI("set_ts_speed", setTsSpeed);
 
-  addOutputChannel("rpm", getRpm, "RPM");
-  addOutputChannel("map", getMap, "kPa");
-  addOutputChannel("baro", getBaroPressure, "kPa");
-  addOutputChannel("tps", getTps, "%");
-  addOutputChannel("clt", getCoolantTemperature, "°C");
-  addOutputChannel("iat", getIntakeAirTemperature, "°C");
-  addOutputChannel("lambda", getLambdaValue, "");
-  addOutputChannel("afr", getAfrValue, "");
-  addOutputChannel("inj_duty", getInjectorDutyCycle, "%");
-  addOutputChannel("airMassPerCycle", getAirMassPerCycle, "mg");
-  addOutputChannel("batteryVoltage", getVBatt, "V");
-  addOutputChannel("advance", getIgnitionAdvance, "°");
-  addOutputChannel("egoCorrection", getEgoCorrection, "%");
-  addOutputChannel("ve", getVeValue, "%");
-  addOutputChannel("fuelLoad", getFuelLoad, "kPa"); // może być MAP lub Alpha-N
-  addOutputChannel("throttlePedal", getPedalPosition, "%");
-  addOutputChannel("vvtIn", getVVTPositionIntake, "°");
-  addOutputChannel("vvtEx", getVVTPositionExhaust, "°");
-  addOutputChannel("boostTarget", getBoostTarget, "kPa");
-
-
 #if EFI_BLUETOOTH_SETUP
 	// module initialization start (it waits for disconnect and then communicates to the module)
 	// Usage:   "bluetooth_hc06 <baud> <name> <pincode>"
