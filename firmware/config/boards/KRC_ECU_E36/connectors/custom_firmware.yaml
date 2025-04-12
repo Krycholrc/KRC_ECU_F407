@@ -201,4 +201,4 @@ pins:
 
   - id: [E15, E15]
     class: [switch_inputs, event_inputs]
-    ts_name: LAUNCH
+    ts_name: CLUTCH
