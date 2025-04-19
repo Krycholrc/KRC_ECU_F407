@@ -71,14 +71,6 @@ pins:
     class: outputs
     ts_name: FUEL_PUMP
 
-  - id: B3
-    class: outputs
-    ts_name: LOW3
-
-  - id: B4
-    class: outputs
-    ts_name: LOW4
-
   - id: B7
     class: outputs
     ts_name: FAN
@@ -91,10 +83,6 @@ pins:
     class: outputs
     ts_name: IDLE1
 
-  - id: D6
-    class: outputs
-    ts_name: LOW2
-
   - id: D7
     class: outputs
     ts_name: TACHO
@@ -102,6 +90,18 @@ pins:
   - id: A7
     class: outputs
     ts_name: LOW1
+
+  - id: B15
+    class: outputs
+    ts_name: LOW2
+
+  - id: B3
+    class: outputs
+    ts_name: LOW3
+
+  - id: B4
+    class: outputs
+    ts_name: LOW4
 
   - id: A8
     class: outputs
@@ -171,10 +171,6 @@ pins:
     class: [switch_inputs, event_inputs]
     ts_name: UART_RX
 
-  - id: [A15, A15]
-    class: [switch_inputs, event_inputs]
-    ts_name: VSS
-
   - id: [B12, B12]
     class: [switch_inputs, event_inputs]
     ts_name: EGT_CS
@@ -194,6 +190,10 @@ pins:
   - id: [D5, D5]
     class: [switch_inputs, event_inputs]
     ts_name: CAM2
+
+  - id: [D6, D6]
+    class: [switch_inputs, event_inputs]
+    ts_name: VSS
 
   - id: [E9, E9]
     class: [switch_inputs, event_inputs]
