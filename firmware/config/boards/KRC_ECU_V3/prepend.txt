@@ -9,7 +9,7 @@
 #define ts_show_sd_pins false
 #define ts_show_can_pins false
 #define ts_show_tunerstudio_port true
-#define ts_show_can2 false
+#define ts_show_can2 true
 #define ts_show_hd false
 #define ts_show_stepper false
 #define ts_show_rotary false
