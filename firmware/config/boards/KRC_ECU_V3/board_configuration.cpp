@@ -57,13 +57,6 @@ void setBoardDefaultConfiguration() {
   engineConfiguration->vbattDividerCoeff = (7.47f / 1.0f);
   engineConfiguration->adcVcc = 3.12f;
 
-	// SPI1 AUX
-	engineConfiguration->is_enabled_spi_1 = true;
-	engineConfiguration->max31855spiDevice = SPI_DEVICE_1;
-	engineConfiguration->spi1mosiPin = Gpio::B5;
-	engineConfiguration->spi1misoPin = Gpio::B4;
-	engineConfiguration->spi1sckPin = Gpio::B3;
-
 	// SPI2 EGT
 	engineConfiguration->is_enabled_spi_2 = true;
 	engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
