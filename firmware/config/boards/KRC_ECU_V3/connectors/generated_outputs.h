@@ -22,14 +22,14 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::E7, // OUT_8B
 	Gpio::E10, // A/C_RLY
 	Gpio::E11, // FUEL_PUMP
-	Gpio::B3, // LOW3
-	Gpio::B4, // LOW4
 	Gpio::B7, // FAN
 	Gpio::B8, // IDLE2
 	Gpio::B9, // IDLE1
-	Gpio::D6, // LOW2
 	Gpio::D7, // TACHO
 	Gpio::A7, // LOW1
+	Gpio::B15, // LOW2
+	Gpio::B3, // LOW3
+	Gpio::B4, // LOW4
 	Gpio::A8, // BOOST
 	Gpio::C13, // MAIN_RLY
 // "OUT_1A",
@@ -50,14 +50,14 @@ Gpio GENERATED_OUTPUTS = {
 // "OUT_8B",
 // "A/C_RLY",
 // "FUEL_PUMP",
-// "LOW3",
-// "LOW4",
 // "FAN",
 // "IDLE2",
 // "IDLE1",
-// "LOW2",
 // "TACHO",
 // "LOW1",
+// "LOW2",
+// "LOW3",
+// "LOW4",
 // "BOOST",
 // "MAIN_RLY",
 }
