@@ -20,7 +20,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->fuelPumpPin = Gpio::E11;
 
 	//Input pin
-	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::B6;
+	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::D6;
 	engineConfiguration->triggerInputPins[0] = Gpio::D3;
 	engineConfiguration->camInputs[0] = Gpio::D4;
 
