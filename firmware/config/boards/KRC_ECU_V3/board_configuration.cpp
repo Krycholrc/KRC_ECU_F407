@@ -25,10 +25,10 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->camInputs[0] = Gpio::D4;
 
 	// Idle configuration
-        engineConfiguration->useStepperIdle = false;
-        engineConfiguration->isDoubleSolenoidIdle = true;
-        engineConfiguration->idle.solenoidPin = Gpio::B9;
-        engineConfiguration->secondSolenoidPin = Gpio::B8;
+  engineConfiguration->useStepperIdle = false;
+  engineConfiguration->isDoubleSolenoidIdle = true;
+  engineConfiguration->idle.solenoidPin = Gpio::B9;
+  engineConfiguration->secondSolenoidPin = Gpio::B8;
 
 	//Analog
 	engineConfiguration->clt.adcChannel = EFI_ADC_0;
@@ -37,7 +37,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->vbattAdcChannel = EFI_ADC_4;
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
 	
-        //Map and baro sensor
+  //Map and baro sensor
 	engineConfiguration->map.sensor.type = MT_MPXH6400;
 	engineConfiguration->baroSensor.type = MT_MPXH6400;
 
@@ -53,9 +53,9 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->iat.config.bias_resistor = 2200;
 
 	//Analog calc
-        engineConfiguration->analogInputDividerCoefficient = 1.55f;
-        engineConfiguration->vbattDividerCoeff = (7.47f / 1.0f);
-        engineConfiguration->adcVcc = 3.12f;
+  engineConfiguration->analogInputDividerCoefficient = 1.55f;
+  engineConfiguration->vbattDividerCoeff = (7.47f / 1.0f);
+  engineConfiguration->adcVcc = 3.12f;
 
 	// SPI1 AUX
 	engineConfiguration->is_enabled_spi_1 = true;
@@ -72,7 +72,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->spi1sckPin = Gpio::B13;
 	engineConfiguration->max31855_cs[0] = Gpio::B12;
 
-        //SPI3 SD card
+  //SPI3 SD card
 	engineConfiguration->isSdCardEnabled = true;
 	engineConfiguration->is_enabled_spi_3 = true;
 	engineConfiguration->sdCardSpiDevice = SPI_DEVICE_3;
@@ -82,15 +82,21 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->sdCardCsPin = Gpio::D2;
 	engineConfiguration->sdCardLogFrequency = 20;
 
-	//CAN bus overwrites
+	//CAN1 bus overwrites
 	engineConfiguration->canTxPin = Gpio::D1;
 	engineConfiguration->canRxPin = Gpio::D0;
-    engineConfiguration->canWriteEnabled = true;
+  engineConfiguration->canWriteEnabled = true;
 	engineConfiguration->canReadEnabled = true;
 	engineConfiguration->canSleepPeriodMs = 50;
 	engineConfiguration->canBaudRate = B500KBPS;
-	engineConfiguration->can2RxPin = Gpio::B5;
-	engineConfiguration->can2TxPin = Gpio::B6;
+	
+  //CAN2 bus overwrites
+	engineConfiguration->can2TxPin = Gpio::B5;
+	engineConfiguration->can2RxPin = Gpio::B6;
+  engineConfiguration->can2WriteEnabled = true;
+	engineConfiguration->can2ReadEnabled = true;
+	engineConfiguration->can2SleepPeriodMs = 50;
+	engineConfiguration->can2BaudRate = B500KBPS;
 
 	//Engine configuration
 	engineConfiguration->ignitionMode = IM_INDIVIDUAL_COILS;
