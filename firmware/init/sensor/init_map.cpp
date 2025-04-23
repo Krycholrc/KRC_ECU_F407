@@ -71,6 +71,8 @@ static MapCfg getMapCfg(air_pressure_sensor_type_e sensorType) {
 		return {0.2, 20, 4.8, 400};
 	case MT_MPXH6300:
 		return {1.0, 60, 4.5, 270};
+  case MT_MPXH6115:
+		return {0.2, 15, 4.8, 115};
 	default:
 		firmwareError(ObdCode::CUSTOM_ERR_MAP_TYPE, "Unknown MAP type: decoder %d", sensorType);
 		// falls through to custom
