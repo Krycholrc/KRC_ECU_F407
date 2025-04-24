@@ -93,7 +93,7 @@ void setBoardDefaultConfiguration() {
 
 	//Engine configuration
 	engineConfiguration->ignitionMode = IM_INDIVIDUAL_COILS;
-	engineConfiguration->crankingInjectionMode = IM_SEQUENTIAL;
+	engineConfiguration->crankingInjectionMode = IM_SIMULTANEOUS;
 	engineConfiguration->injectionMode = IM_SEQUENTIAL;
 	
 	//Knock 
