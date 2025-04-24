@@ -35,9 +35,9 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->iat.adcChannel = EFI_ADC_1;
 	engineConfiguration->tps1_1AdcChannel = EFI_ADC_6;
 	engineConfiguration->vbattAdcChannel = EFI_ADC_4;
-	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
 	
   //Map sensor
+  engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
 	engineConfiguration->map.sensor.type = MT_MPXH6400;
 
   //Baro sensor
