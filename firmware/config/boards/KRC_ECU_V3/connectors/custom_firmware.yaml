@@ -127,13 +127,13 @@ pins:
     class: analog_inputs
     ts_name: MAP1
 
-  - id: EFI_ADC_4
-    class: analog_inputs
-    ts_name: BATT
-
   - id: EFI_ADC_5
     class: analog_inputs
     ts_name: MAP2
+
+  - id: EFI_ADC_4
+    class: analog_inputs
+    ts_name: BATT
 
   - id: EFI_ADC_6
     class: analog_inputs
