@@ -41,7 +41,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->map.sensor.type = MT_MPXH6400;
 
   //Baro sensor
-  engineConfiguration->baroSensor.hwChannel = EFI_ADC_NONE;
+  //engineConfiguration->baroSensor.hwChannel = EFI_ADC_NONE;
   engineConfiguration->lps25BaroSensorScl = Gpio::B10;
 	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 
