@@ -37,9 +37,12 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->vbattAdcChannel = EFI_ADC_4;
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
 	
-  //Map and baro sensor
+  //Map sensor
 	engineConfiguration->map.sensor.type = MT_MPXH6400;
-	engineConfiguration->baroSensor.type = MT_MPXH6400;
+
+  //Baro sensor
+  engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 
 	//DBW throotle
 	engineConfiguration->etbIo[0].directionPin1 = Gpio::C6;   // DIR pin
