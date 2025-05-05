@@ -88,8 +88,8 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->canBaudRate = B500KBPS;
 	
   //CAN2 bus overwrites
-	engineConfiguration->can2TxPin = Gpio::B5;
-	engineConfiguration->can2RxPin = Gpio::B6;
+	engineConfiguration->can2RxPin = Gpio::B5;
+	engineConfiguration->can2TxPin = Gpio::B6;
 	engineConfiguration->can2BaudRate = B500KBPS;
 
 	//Engine configuration
