@@ -27,6 +27,9 @@ DDEFS += -DEFI_MAX_31855=TRUE
 # reduce memory usage monitoring
 DDEFS += -DRAM_UNUSED_SIZE=100
 
+# I2C
+DDEFS += -DSTM32_I2C_USE_I2C2=TRUE
+
 # Lua size
 #DDEFS += -DLUA_USER_HEAP=32000
 
