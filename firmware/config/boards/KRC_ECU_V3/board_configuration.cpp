@@ -42,8 +42,8 @@ void setBoardDefaultConfiguration() {
 
   //Baro sensor
   engineConfiguration->baroSensor.hwChannel = EFI_ADC_NONE;
-  engineConfiguration->lps22BaroSensorScl = Gpio::B10;
-	engineConfiguration->lps22BaroSensorSda = Gpio::B11;
+  engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 
 	//DBW throotle
 	engineConfiguration->etbIo[0].directionPin1 = Gpio::C6;   // DIR pin
